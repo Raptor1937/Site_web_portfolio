@@ -19,4 +19,4 @@ Ce dossier contient une version complète, moderne et responsive de votre site w
 | **Sommaire des projets** | Grille de vignettes aérées avec titre court, visuel/icône, résumé en 2-3 lignes et bouton explicite d'accès. |
 | **1 Projet détaillé selon la trame en 6 étapes** | Structure stricte en 6 points : <br>1. *Contexte*<br>2. *Objectif*<br>3. *Démarche & Contribution personnelle* (**mis en valeur avec « J'ai réalisé »**)<br>4. *Outils & Technologies*<br>5. *Résultats & Mesures concrètes*<br>6. *Compétences (techniques et transversales)* |
 | **Pas de recopie brute du CV** | Le site complète le CV en détaillant le « comment » et le « savoir-faire », sans doublonner la mise en page papier. |
-| **Ergonomie & Lisibilité mobile** | Palette de couleurs limitée (bleu marine, ardoise, blanc), typographie nette, espacements aérés, menu burger responsive. |
+| **Ergonomie & Lisibilité mobile** | Palette de couleurs limitée (bleu marine, ardoise, blanc), typographie nette, espacements aérés |
