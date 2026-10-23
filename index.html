@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas ARISTIN | Portfolio Ingénierie & Systèmes Embarqués (BUT GEII)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+  <!-- Header & Navigation -->
+  <header class="navbar-wrapper">
+    <div class="container nav-container">
+      <a href="#accueil" class="brand-logo">
+        <span class="logo-badge">TA</span>
+        <span class="logo-text">Thomas <span class="accent-text">ARISTIN</span></span>
+      </a>
+
+      <button class="mobile-toggle" id="menuToggle" aria-label="Menu navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navMenu">
+        <a href="#accueil" class="nav-item active">Accueil</a>
+        <a href="#projets" class="nav-item">Projets & Réalisations</a>
+        <a href="#competences" class="nav-item">Compétences ESE</a>
+        <a href="#cv-contact" class="nav-item">Contact & CV</a>
+        <a href="#cv-contact" class="nav-btn">Discuter d'un stage</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION HERO / ACCUEIL (Style Carte Spatiale / Aérospatial comme Benjamin) -->
+    <section id="accueil" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Carte Principale : Qui suis-je ? -->
+          <div class="glow-card hero-main-card">
+            <div class="card-pill">
+              <span class="dot-live"></span>
+              <span>SYSTÈMES EMBARQUÉS & ÉLECTRONIQUE • IUT TOULOUSE</span>
+            </div>
+
+            <h1 class="hero-title">
+              > Qui suis-je ?
+            </h1>
+
+            <p class="hero-bio">
+              Je m'appelle <strong>Thomas ARISTIN</strong>, étudiant en 2<sup>e</sup> année de <strong>BUT Génie Électrique et Informatique Industrielle (GEII)</strong>, parcours <strong>Électronique & Systèmes Embarqués (ESE)</strong> à l'IUT de Toulouse Paul Sabatier.
+            </p>
+            <p class="hero-bio-sub">
+              Passionné par la conception matérielle (schéma & routage PCB), le développement firmware sur microcontrôleurs (STM32, C/C++) et l'automatisme industriel. Mon objectif est d'appliquer ma rigueur méthodologique et mes compétences techniques au service de projets industriels innovants.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projets" class="btn btn-glow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Explorer mes projets
+              </a>
+            <a href="cv_thomas_aristin.pdf" class="btn btn-glass" target="_blank" download="CV_Thomas_ARISTIN.pdf">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Consulter mon CV (PDF)
+            </a>
+            </div>
+          </div>
+
+          <!-- Carte Latérale : Profil Technique & Statut -->
+          <aside class="glow-card hero-status-card">
+            <div class="card-header-icon">
+              <div class="icon-avatar">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <h3>Profil Technique & Statut</h3>
+            </div>
+
+            <div class="status-specs">
+              <div class="spec-row">
+                <span class="spec-label">FORMATION</span>
+                <span class="spec-val">BUT GEII (2<sup>e</sup> année)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">SPÉCIALITÉ</span>
+                <span class="spec-val highlight-val">Électronique & Systèmes Embarqués (ESE2)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">ÉTABLISSEMENT</span>
+                <span class="spec-val">IUT Toulouse III - Paul Sabatier</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">SECTEURS VISÉS</span>
+                <span class="spec-val">Aéronautique, Spatial, Électronique, IoT</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">STATUT RECHERCHE</span>
+                <span class="spec-badge-avail">
+                  <span class="pulse-dot"></span>
+                  En recherche de stage / alternance
+                </span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- 3 Univers à explorer (Navigation rapide) -->
+        <div class="univers-section">
+          <div class="section-tag-small">Navigation par univers</div>
+          <h2 class="univers-heading">3 Domaines à explorer</h2>
+          
+          <div class="univers-grid">
+            <a href="#projets" class="univers-card">
+              <div class="u-icon">🚀</div>
+              <div class="u-info">
+                <span class="u-badge">Projets & Réalisations</span>
+                <h4>Mes Réalisations Techniques</h4>
+                <p>Découvrez mes projets en détail : chaîne automatisée, SmartCar autonome, biomédical ECG et capteurs IoT.</p>
+              </div>
+            </a>
+
+            <a href="#competences" class="univers-card">
+              <div class="u-icon">⚡</div>
+              <div class="u-info">
+                <span class="u-badge">Savoir-faire & Outils</span>
+                <h4>Compétences & Laboratoire</h4>
+                <p>Maîtrise de KiCad, STM32 C++, TIA Portal, Proteus, routage PCB et instrumentation sur banc d'essai.</p>
+              </div>
+            </a>
+
+            <a href="#cv-contact" class="univers-card">
+              <div class="u-icon">📄</div>
+              <div class="u-info">
+                <span class="u-badge">Échange & CV</span>
+                <h4>Contact & Curriculum Vitae</h4>
+                <p>Retrouvez mon CV téléchargeable en format PDF et mes coordonnées pour échanger sur une opportunité.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJETS & RÉALISATIONS -->
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="tag-cyber">RÉALISATIONS SAÉ & PROJETS</span>
+          <h2 class="section-main-title">Mes Projets Techniques</h2>
+          <p class="section-desc">
+            Chaque projet est conduit avec rigueur méthodologique, alliant modélisation théorique, simulation, fabrication et banc de validation.
+          </p>
+        </div>
+
+        <!-- ========================================================
+             PROJET 1 (FOCUS ÉVALUATION V1) : CHAÎNE DE PRODUCTION & TRANSPORT
+             Structuré selon la trame obligatoire en 6 points avec retours prof intégrés
+             ======================================================== -->
+        <article class="featured-project-container glow-card" id="projet-chaine">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon">SAÉ S2 • Projet Clé V1</span>
+              <span class="badge-status">Automatisme Industriel & IHM</span>
+            </div>
+            <h3 class="proj-title">Automatisation & Supervision d'une Chaîne de Production (Poste de Tri & Transport)</h3>
+            <p class="proj-lead">
+              Étude fonctionnelle, algorithmique Grafcet, programmation TIA Portal sur automate Siemens et développement d'une IHM dédiée au pilotage et au diagnostic en temps réel.
+            </p>
+          </div>
+
+          <!-- Grille des 6 points imposés par le cours de communication -->
+          <div class="six-steps-grid">
+            
+            <!-- 1. Contexte -->
+            <div class="step-box">
+              <div class="step-num">01. Contexte & Cadre</div>
+              <h4>Environnement d'atelier interconnecté</h4>
+              <p>
+                Projet réalisé au Semestre 2 du BUT GEII à l'IUT de Toulouse. Travail conduit en <strong>binôme</strong> sur une station industrielle de transport et de tri de pièces entre les postes A et C, intégrée au sein d'une ligne automatisée complète à 5 stations.
+              </p>
+            </div>
+
+            <!-- 2. Objectif -->
+            <div class="step-box">
+              <div class="step-num">02. Objectif</div>
+              <h4>Cahier des charges & Automatisation</h4>
+              <p>
+                Automatiser le cycle de transit continu des pièces d'un point A à un point B de la chaîne, gérer les séquences de convoyage par vérins et éliminer tout risque de blocage ou de collision matérielle.
+              </p>
+            </div>
+
+            <!-- 3. Démarche & Réalisation personnelle (VALORISATION INDIVIDUELLE) -->
+            <div class="step-box highlight-personal">
+              <div class="step-num star">03. Ma Contribution Personnelle</div>
+              <h4>Rôle individuel & Responsabilités majeures</h4>
+              <p class="mb-2">Pour assurer le succès du binôme, j'ai pris personnellement en charge :</p>
+              <ul class="clean-list">
+                <li><strong>Conception intégrale du Grafcet :</strong> Rédaction de l'algorithme sous <em>draw.io</em> en respectant scrupuleusement les règles du langage (transitions, réceptivités et synchronisations).</li>
+                <li><strong>Développement sur TIA Portal :</strong> Programmation complète du Grafcet en langage automate fonctionnel (réalisée avec rigueur en autonomie).</li>
+                <li><strong>Conception & Codage de l'IHM :</strong> Création de tous les boutons de commande et voyants dynamiques avec une charte graphique ergonomique pour faciliter le diagnostic opérateur.</li>
+              </ul>
+            </div>
+
+            <!-- 4. Outils et technologies -->
+            <div class="step-box">
+              <div class="step-num">04. Outils & Technologies</div>
+              <h4>Environnement logiciel & matériel</h4>
+              <div class="tech-tags">
+                <span class="t-tag">Siemens TIA Portal</span>
+                <span class="t-tag">Langage Grafcet / Ladder</span>
+                <span class="t-tag">Draw.io (Modélisation)</span>
+                <span class="t-tag">Supervision IHM Tactile</span>
+                <span class="t-tag">Vérins & Capteurs Industriels</span>
+              </div>
+            </div>
+
+            <!-- 5. Résultats & Preuves (Explication concrète du 18/20) -->
+            <div class="step-box">
+              <div class="step-num">05. Résultats & Validation</div>
+              <h4>Preuves concrètes & Performance</h4>
+              <p>
+                Validation complète du cycle lors des tests unitaires et d'intégration sur site : cycle de convoyage 100 % fluide, aucun défaut de synchronisation sur les vérins, et notation d'excellence (18/20) récompensant la rigueur du code et la clarté de l'IHM.
+              </p>
+            </div>
+
+            <!-- 6. Compétences mobilisées -->
+            <div class="step-box">
+              <div class="step-num">06. Compétences Développées</div>
+              <h4>Techniques & Savoir-être</h4>
+              <ul class="clean-list">
+                <li><strong>Techniques :</strong> Traduction d'un cahier des charges en Grafcet opérationnel, maîtrise de TIA Portal, conception d'interfaces homme-machine.</li>
+                <li><strong>Transversales :</strong> Esprit de synthèse, rigueur dans les tests pas-à-pas, communication fluide et concertation active au sein du binôme.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- PREUVES VISUELLES & VIDÉO : CHAÎNE DE PRODUCTION -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">🎬</span>
+              <div class="trace-titles">
+                <h5>Preuves en Fonctionnement & Diagnostic Technique • Chaîne de Production</h5>
+                <span>Vidéo de fonctionnement réel sur maquette industrielle et diagnostic TIA Portal</span>
+              </div>
+              <span class="trace-pill">Vidéo & Traces Validées</span>
+            </div>
+
+            <!-- Lecteur Vidéo de la chaîne de production en action -->
+            <div class="video-wrapper">
+              <video controls playsinline class="project-video" poster="images/chaine_prod_actionneur_detail.png">
+                <source src="videos/video_chaine_production.mov" type="video/quicktime">
+                <source src="videos/video_chaine_production.mov" type="video/mp4">
+                Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+              </video>
+              <div class="video-caption">
+                <strong>Démonstration vidéo du système en fonctionnement :</strong>
+                Cycle automatisé complet de transit et de tri de pièces industrielles sur la chaîne de distribution, synchronisé par les capteurs et vérins pneumatiques.
+              </div>
+            </div>
+
+            <!-- Grille des captures de diagnostic technique et IHM -->
+            <div class="trace-gallery-grid">
+              <div class="trace-media-card">
+                <img src="images/chaine_prod_capture_195401.png" alt="IHM TIA Portal de supervision" class="trace-img">
+                <span class="media-caption">
+                  <strong>Interface Homme-Machine (IHM TIA Portal) :</strong>
+                  Conception de l'écran tactile de supervision sous WinCC. Intégration des boutons de pilotage (départ cycle, mode pas-à-pas, réarmement) et retour visuel dynamique de l'avancement de la station.
+                </span>
+              </div>
+              <div class="trace-media-card">
+                <img src="images/chaine_prod_capture_195305.png" alt="Paramétrage des transitions TIA Portal" class="trace-img">
+                <span class="media-caption">
+                  <strong>Mise en œuvre & Paramétrage des transitions :</strong>
+                  Programmation sur TIA Portal des équations logiques de franchissement d'étapes (méthode par mot Grafcet). Sécurisation de l'enchaînement des mouvements et élimination des blocages mécaniques.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================================
+             PROJET 2 : SMARTCAR AUTONOME & TÉLÉCOMMANDÉE (BUT1)
+             Partie Électronique (PCB/KiCad) & Informatique Embarquée (STM32/Bluetooth)
+             ======================================================== -->
+        <article class="featured-project-container glow-card mt-5" id="projet-smartcar">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon blue">SAÉ S1-S2 • BUT1 GEII</span>
+              <span class="badge-status">Électronique Matérielle & Firmware C++</span>
+            </div>
+            <h3 class="proj-title">SmartCar : Véhicule Autonome & Pilotage Bluetooth par Smartphone</h3>
+            <p class="proj-lead">
+              Conception complète d'un robot mobile combinant carte électronique sur-mesure (routage KiCad double-face) et programmation embarquée temps réel sur microcontrôleur STM32.
+            </p>
+          </div>
+
+          <div class="grid-2-proj">
+            <!-- Volet Électronique Matérielle -->
+            <div class="sub-proj-card">
+              <div class="sub-proj-badge">Volet Électronique & PCB</div>
+              <h4>Conception Matérielle & Routage</h4>
+              <p>
+                Travail documenté dans le <em>Cahier de Fabrication</em> et le <em>Cahier de Laboratoire</em> (Binôme Makoa / Aristin) :
+              </p>
+              <ul class="clean-list">
+                <li><strong>Schéma & CAO :</strong> Saisie de schéma sous KiCad / Proteus et dimensionnement des composants discrets.</li>
+                <li><strong>Routage double-face :</strong> Pistes de puissance pour moteurs DC, filtrage d'alimentation, isolation des signaux sensibles.</li>
+                <li><strong>Sous-systèmes intégrés :</strong> Pont en H, capteur LDR (phares automatiques), phototransistors (suivi de ligne), télémétrie distance IR/ultrasons, buzzer et module Bluetooth.</li>
+                <li><strong>Fabrication :</strong> Gravure, perçage, brasage CMS/traversants et qualification métrologique.</li>
+              </ul>
+            </div>
+
+            <!-- Volet Informatique Embarquée -->
+            <div class="sub-proj-card">
+              <div class="sub-proj-badge cyan">Volet Firmware & C++</div>
+              <h4>Programmation Embarquée (STM32 Nucleo L476RG)</h4>
+              <p>
+                Développement C++ sous <em>PlatformIO</em> (fichier <code>projet_etudiant_smartcar.cpp</code>) :
+              </p>
+              <ul class="clean-list">
+                <li><strong>Génération PWM par Hardware Timer :</strong> Pilotage indépendant de la vitesse et de la direction des moteurs (canaux PWM avant, arrière, gauche, droite).</li>
+                <li><strong>Gestion capteurs :</strong> Échantillonnage analogique continu (ADC pour niveau batterie, capteur de luminosité et distances).</li>
+                <li><strong>Liaison sans fil & GUI RemoteXY :</strong> Communication série Bluetooth (SoftwareSerial 9600 bauds), restitution de la télémétrie batterie sur bargraph et joystick tactile sur smartphone.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PREUVES MATÉRIELLES, ROUTAGE & TESTS : PROJET SMARTCAR -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">🚗</span>
+              <div class="trace-titles">
+                <h5>Conception Matérielle, Routage PCB & Qualification sur Banc • Projet SmartCar</h5>
+                <span>Du schéma KiCad au prototype assemblé et qualifié sur banc d'essai</span>
+              </div>
+              <span class="trace-pill">3 Traces Techniques SmartCar</span>
+            </div>
+            
+            <div class="trace-gallery-grid grid-3">
+              <!-- 1. Carte assemblée -->
+              <div class="trace-media-card">
+                <img src="images/Smart_car_PCB.png" alt="Carte électronique SmartCar fabriquée" class="trace-img">
+                <span class="media-caption">
+                  <strong>1. Prototype matériel de la SmartCar :</strong>
+                  Carte électronique double face équipée, intégrant les connecteurs de puissance moteurs, les étages d'alimentation, le microcontrôleur STM32 et les modules capteurs/actionneurs.
+                </span>
+              </div>
+
+              <!-- 2. Routage KiCad -->
+              <div class="trace-media-card">
+                <img src="images/Kicad_PCB.png" alt="Routage de la carte SmartCar sous KiCad" class="trace-img">
+                <span class="media-caption">
+                  <strong>2. Routage PCB sous KiCad :</strong>
+                  Conception du typon double couche avec plan de masse, routage des pistes de puissance larges pour les moteurs et isolation des signaux numériques haute vitesse.
+                </span>
+              </div>
+
+              <!-- 3. Banc d'essai réel en atelier -->
+              <div class="trace-media-card">
+                <img src="images/smartcar_banc_essai_reel.jpg" alt="Véhicule SmartCar en cours de qualification sur banc" class="trace-img">
+                <span class="media-caption">
+                  <strong>3. Banc de test & Intégration en laboratoire :</strong>
+                  Mise sous tension du véhicule assemblé sur châssis mobile, liaison avec la station de développement et vérification des continuités et signaux sous environnement réel.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================================
+             PROJET 3 : ÉLECTROCARDIOGRAMME BIOMÉDICAL (ECG - S3 ESE)
+             Conditionnement de signal de haute précision & Filtrage analogique
+             ======================================================== -->
+        <article class="featured-project-container glow-card mt-5" id="projet-ecg">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon purple">SAÉ S3 • Spécialité ESE</span>
+              <span class="badge-status">Instrumentation & Électronique Analogique</span>
+            </div>
+            <h3 class="proj-title">Dispositif Biomédical : Électrocardiogramme (ECG) Haute Précision</h3>
+            <p class="proj-lead">
+              Conception d'une chaîne d'acquisition et de traitement analogique pour l'extraction de signaux physiologiques cardiaques de l'ordre du millivolt dans un environnement bruité.
+            </p>
+          </div>
+
+          <div class="ecg-details-grid">
+            <div class="ecg-block">
+              <h4>🎯 Problématique Biomédicale</h4>
+              <p>
+                L'activité électrique du cœur génère en surface de la peau un signal d'amplitude minuscule (de l'ordre de <strong>0,5 à 2 mV</strong>). Ce signal physiologique est naturellement immergé dans un environnement hostile de bruits parasites : tensions de polarisation d'électrodes, bruits musculaires (EMG) et surtout le rayonnement électromagnétique omniprésent du secteur électrique à <strong>50 Hz</strong> (qui peut dépasser plusieurs volts en mode commun).
+              </p>
+              <p class="mt-2">
+                Le défi de ce projet ESE est de concevoir une chaîne de traitement du signal analogique à très haute fidélité, capable d'extraire et de restituer proprement le complexe P-QRS-T sans distorsion.
+              </p>
+            </div>
+            <div class="ecg-block">
+              <h4>🛠️ Chaîne d'Acquisition Complète (Architecture Étage par Étage)</h4>
+              <ul class="clean-list">
+                <li><strong>1. Étage de Protection (FA1 / FP1) :</strong> Réseau de diodes de clamp et résistances en série pour protéger le circuit et l'utilisateur contre les décharges électrostatiques (ESD).</li>
+                <li><strong>2. Pré-amplification d'Instrumentation :</strong> Amplificateur différentiel à très fort taux de réjection en mode commun (TRMC > 100 dB) pour éliminer les tensions induites parasites identiques sur les deux électrodes.</li>
+                <li><strong>3. Filtrage Passe-Haut :</strong> Élimination de la composante continue et de la dérive lente de la ligne de base causée par la respiration du patient (fréquence de coupure ~ 0,05 Hz).</li>
+                <li><strong>4. Filtrage Passe-Bas d'Ordre 2 Sallen-Key (FP3 - 150 Hz) :</strong> Atténuation des bruits électromyographiques à haute fréquence avec une pente asymptotique de -40 dB/décade (fréquence mesurée sous Proteus à 162 Hz).</li>
+                <li><strong>5. Filtre Réjecteur Notch Twin-T Actif (FP4 - 50 Hz) :</strong> Réseau réjecteur en double T rebouclé sur AOP MCP6002 garantissant une atténuation drastique de plus de <strong>-60 dB</strong> à 50 Hz.</li>
+                <li><strong>6. Étage de Gain & Décalage de Référence :</strong> Amplification finale et centrage du signal sur une tension de référence de <strong>+2,5 V</strong> afin de l'adapter parfaitement à la plage d'entrée de l'ADC du microcontrôleur STM32.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PREUVES DE CONCEPTION & SIMULATION : PROJET ECG BIOMÉDICAL -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">🫀</span>
+              <div class="trace-titles">
+                <h5>Conception Matérielle, Simulation Proteus & Routage • Projet ECG (Biomédical)</h5>
+                <span>Chaîne de filtrage analogique : Modélisation Proteus, schéma KiCad, typon et carte de test</span>
+              </div>
+              <span class="trace-pill">4 Traces Techniques ECG</span>
+            </div>
+
+            <!-- Grille 4 colonnes / 2x2 des images officielles ECG -->
+            <div class="trace-gallery-grid grid-4">
+              
+              <!-- 1. Simulation Proteus -->
+              <div class="trace-media-card">
+                <img src="images/ecg_simulation_proteus_frequency.png" alt="Simulation fréquentielle Proteus du filtre Notch" class="trace-img">
+                <span class="media-caption">
+                  <strong>1. Modélisation & Simulation Proteus (AC Sweep) :</strong>
+                  Vérification du filtre réjecteur 50 Hz (Notch Twin-T actif). La courbe verte montre une réjection ultra-précise de -60 dB centrée sur la fréquence parasite du secteur (50 Hz).
+                </span>
+              </div>
+
+              <!-- 2. Schéma électrique KiCad -->
+              <div class="trace-media-card">
+                <img src="images/ecg_schema_kicad_50hz.png" alt="Schéma électrique KiCad de la fonction réjecteur" class="trace-img">
+                <span class="media-caption">
+                  <strong>2. Schéma électrique (KiCad) :</strong>
+                  Architecture de la fonction réjecteur 50 Hz autour de l'amplificateur opérationnel rail-to-rail MCP6002 (U6A / U6B), réseau en double T (47 kΩ / 68 nF) et référence de tension à +2,5 V.
+                </span>
+              </div>
+
+              <!-- 3. Routage PCB Fonction 2 -->
+              <div class="trace-media-card">
+                <img src="images/ecg_routage_pcb_fonction2.png" alt="Routage PCB du filtre sous KiCad" class="trace-img">
+                <span class="media-caption">
+                  <strong>3. Typon & Routage PCB (Fonction 2) :</strong>
+                  Implantation des pistes d'alimentation directes (pistes droites sans détour), découplage de proximité (C9 = 100 nF) et routage soigné des signaux analogiques sensibles.
+                </span>
+              </div>
+
+              <!-- 4. Prototype soudé -->
+              <div class="trace-media-card">
+                <img src="images/ecg_proto_board.png" alt="Carte prototype soudée en atelier" class="trace-img tall">
+                <span class="media-caption">
+                  <strong>4. Prototype physique soudé en laboratoire :</strong>
+                  Réalisation matérielle sur carte à pastilles (Proto Board) intégrant l'AOP monté sur adaptateur, résistances à couche métallique de précision et borniers de connexion pour les tests sur banc.
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================================
+             PROJET 4 : SYSTÈME EMBARQUÉ (PROJET IE - INFORMATIQUE EMBARQUÉE)
+             Architecture bus I2C/SPI, Écran TFT & Capteurs industriels
+             ======================================================== -->
+        <article class="featured-project-container glow-card mt-5" id="projet-ie">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon cyan">SAÉ S3 • Projet IE</span>
+              <span class="badge-status">Projet Informatique Embarquée</span>
+            </div>
+            <h3 class="proj-title">Système Embarqué (Projet IE) : Hub Multi-Capteurs I2C & Affichage TFT SPI</h3>
+            <p class="proj-lead">
+              Développement d'une application temps réel intégrant bus de communication industriels, capteurs MEMS numériques et rendu graphique interactif sur microcontrôleur STM32.
+            </p>
+          </div>
+
+          <div class="iot-specs-grid">
+            <div class="iot-card">
+              <span class="i-badge">Liaison SPI</span>
+              <h4>Écran Graphique Couleur (ILI9341)</h4>
+              <p>Affichage haute cadence, gestion des rafraîchissements dynamiques, chronomètre temps réel et machine à états réactive.</p>
+            </div>
+            <div class="iot-card">
+              <span class="i-badge">Bus I2C (0x1D)</span>
+              <h4>Accéléromètre Numérique 3 Axes (MMA8451)</h4>
+              <p>Configuration des registres I2C, détection dynamique de secousses, mesure d'inclinaison et calibrage en continu.</p>
+            </div>
+            <div class="iot-card">
+              <span class="i-badge">Bus I2C (0x29)</span>
+              <h4>Capteur Optique Couleur & Lux (TCS34725)</h4>
+              <p>Intégration d'un capteur de reconnaissance chromatique RGB haute précision avec gain ajustable pour validation temps réel.</p>
+            </div>
+          </div>
+
+          <!-- PREUVES MATÉRIELLES & CODE : PROJET IE -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">💻</span>
+              <div class="trace-titles">
+                <h5>Preuves Matérielles & Firmware C++ • Projet Informatique Embarquée (IE)</h5>
+                <span>Banc de test STM32 câblé avec écran TFT et architecture logicielle PlatformIO</span>
+              </div>
+              <span class="trace-pill">2 Traces Techniques IE</span>
+            </div>
+            
+            <div class="trace-gallery-grid">
+              <!-- Trace 1 : Matériel -->
+              <div class="trace-media-card">
+                <img src="images/ie_banc_tft_capteurs.jpg" alt="Banc de test matériel STM32 et écran TFT" class="trace-img">
+                <span class="media-caption">
+                  <strong>Banc de test matériel & Affichage TFT SPI :</strong>
+                  Carte STM32 Nucleo-L476RG interfacée avec l'écran TFT couleur ILI9341 (affichage du chronomètre temps réel et consigne 'Secoue la carte'), platine d'expérimentation et capteurs I2C (accéléromètre MMA8451 et capteur de couleur TCS34725).
+                </span>
+              </div>
+
+              <!-- Trace 2 : Code -->
+              <div class="trace-media-card">
+                <img src="images/ie_code_firmware_vscode.png" alt="Code firmware C++ sous PlatformIO" class="trace-img">
+                <span class="media-caption">
+                  <strong>Développement Firmware (PlatformIO / C++) :</strong>
+                  Structure logicielle sous VS Code avec la machine à états finis (<code>enum EtatJeu { JEU_SECOUSSE, JEU_BLEU, VICTOIRE, BOOM };</code>), gestion de l'affichage graphique via Adafruit_GFX et cadencement temporel réactif.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================================
+             PROJET 5 : ÉNERGIE SOLAIRE & ÉLECTRONIQUE DE PUISSANCE (PHOTOVOLTAÏQUE)
+             Simulation Proteus (cellule I-V), Régulation DC/DC et PVSyst (3 kWc)
+             ======================================================== -->
+        <article class="featured-project-container glow-card mt-5" id="projet-pv">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon yellow">SAÉ Énergie • S1-S2</span>
+              <span class="badge-status">Conversion d'Énergie & Dimensionnement Solaire</span>
+            </div>
+            <h3 class="proj-title">Modélisation, Régulation DC/DC & Simulation Solaire (Proteus & PVSyst)</h3>
+            <p class="proj-lead">
+              Caractérisation physique de cellules photovoltaïques en simulation et sur banc réel, étude de la régulation de charge batterie et simulation technico-économique d'une installation raccordée au réseau sous PVSyst.
+            </p>
+          </div>
+
+          <div class="grid-2-proj">
+            <div class="sub-proj-card">
+              <div class="sub-proj-badge yellow">Modélisation & Électronique de Puissance</div>
+              <h4>Caractérisation Électrique de la Cellule</h4>
+              <p>
+                Sous <strong>Proteus ISIS</strong>, modélisation du schéma équivalent à une diode d'un module photovoltaïque (générateur de courant photo-induit I<sub>ph</sub> = 3,8&nbsp;A, diode de jonction, résistance série R<sub>s</sub> = 0,5&nbsp;Ω et résistance shunt R<sub>sh</sub> = 500&nbsp;Ω).
+              </p>
+              <ul class="clean-list">
+                <li><strong>Analyse DC Sweep :</strong> Tracé des caractéristiques I(V) et P(V) mettant en évidence la zone de courant constant et le point de puissance maximale (MPP).</li>
+                <li><strong>Régulation de charge :</strong> Étude des modes de charge batterie via régulateur DC/DC et banc de mesures au pyranomètre.</li>
+              </ul>
+            </div>
+
+            <div class="sub-proj-card">
+              <div class="sub-proj-badge yellow">Génie Énergétique & Dimensionnement</div>
+              <h4>Simulation d'Installation sous PVSyst</h4>
+              <p>
+                Dimensionnement complet d'une installation résidentielle raccordée au réseau localisée à Saint-Orens (Haute-Garonne) :
+              </p>
+              <ul class="clean-list">
+                <li><strong>Champ photovoltaïque :</strong> 10 modules monocristallins de 300 Wc en série (puissance crête totale de <strong>3,00 kWc</strong>).</li>
+                <li><strong>Conversion & Réseau :</strong> Onduleur 3 kWac avec suivi MPP intégré (plage 125 - 440 V).</li>
+                <li><strong>Performance énergétique :</strong> Production annuelle simulée de <strong>3 830 kWh/an</strong>, ratio de performance exceptionnel (PR = <strong>85,03 %</strong>) et productible de 1 277 kWh/kWc/an.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PREUVES DE SIMULATION PHOTOVOLTAÏQUE -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">☀️</span>
+              <div class="trace-titles">
+                <h5>Preuves de Modélisation & Résultats de Simulation • Projet Photovoltaïque</h5>
+                <span>Courbe I(V) sous Proteus et rapport complet de productible sous PVSyst</span>
+              </div>
+              <span class="trace-pill">Résultats Proteus & PVSyst</span>
+            </div>
+
+            <div class="trace-gallery-grid">
+              <!-- Capture 1 : Proteus -->
+              <div class="trace-media-card">
+                <img src="images/pv_simulation_proteus_iv.png" alt="Simulation Proteus de la cellule photovoltaïque et courbe I-V" class="trace-img">
+                <span class="media-caption">
+                  <strong>Modélisation de la cellule solaire sous Proteus :</strong>
+                  Schéma équivalent avec générateur de courant I<sub>ph</sub>, diode D2, résistances R<sub>s</sub> et R<sub>sh</sub>. Le graphe DC Sweep affiche la courbe caractéristique I(V) avec un courant de court-circuit I<sub>sc</sub> = 3,8&nbsp;A et une tension à vide V<sub>oc</sub> = 21&nbsp;V.
+                </span>
+              </div>
+
+              <!-- Capture 2 : PVSyst -->
+              <div class="trace-media-card">
+                <img src="images/pv_simulation_pvsyst.png" alt="Rapport de simulation PVSyst Maison Saint-Orens" class="trace-img">
+                <span class="media-caption">
+                  <strong>Rapport de simulation complet sous PVSyst (Projet Saint-Orens) :</strong>
+                  Synthèse des résultats principaux : énergie produite annuelle de 3 830 kWh/an, diagramme journalier entrée/sortie, histogramme de l'indice de performance mensuel (PR moyen = 85 %) et distribution de puissance.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES ESE & OUTILS -->
+    <section id="competences" class="section bg-card-dark">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="tag-cyber">SAVOIR-FAIRE DU BUT GEII</span>
+          <h2 class="section-main-title">Compétences Techniques & Méthodologiques</h2>
+          <p class="section-desc">Un profil équilibré alliant rigueur matérielle (hardware) et maîtrise logicielle (firmware & automatisme).</p>
+        </div>
+
+        <div class="competences-grid">
+          
+          <div class="comp-box">
+            <div class="comp-icon">📐</div>
+            <h3>Conception Électronique & CAO</h3>
+            <p>Saisie de schémas, dimensionnement analogique et numérique, routage PCB simple et double couche, respect des contraintes CEM.</p>
+            <div class="pill-list">
+              <span>KiCad V7/V8</span>
+              <span>Proteus ISIS/ARES</span>
+              <span>Routage double-face</span>
+              <span>Composants CMS & Traversants</span>
+              <span>Banc de test (Oscilloscope, GBF)</span>
+            </div>
+          </div>
+
+          <div class="comp-box">
+            <div class="comp-icon">💻</div>
+            <h3>Informatique Embarquée & Firmware</h3>
+            <p>Développement bas niveau, configuration de périphériques (Timers, ADC, PWM), gestion des protocoles de communication série.</p>
+            <div class="pill-list">
+              <span>C / C++ Embarqué</span>
+              <span>STM32 (Nucleo L476RG)</span>
+              <span>PlatformIO / VS Code</span>
+              <span>Bus I2C, SPI, UART</span>
+              <span>Bluetooth & Interfaces IHM (RemoteXY)</span>
+            </div>
+          </div>
+
+          <div class="comp-box">
+            <div class="comp-icon">⚙️</div>
+            <h3>Automatisme & Régulation</h3>
+            <p>Modélisation de systèmes discrets, respect strict du formalisme Grafcet, programmation d'automates industriels et supervision.</p>
+            <div class="pill-list">
+              <span>Siemens TIA Portal</span>
+              <span>Langage Grafcet & Ladder</span>
+              <span>Draw.io (Modélisation)</span>
+              <span>Supervision IHM</span>
+              <span>Diagnostic & Tests unitaires</span>
+            </div>
+          </div>
+
+          <div class="comp-box">
+            <div class="comp-icon">🤝</div>
+            <h3>Compétences Transversales</h3>
+            <p>Capacités humaines et organisationnelles indispensables pour la réussite de projets d'ingénierie en entreprise.</p>
+            <div class="pill-list">
+              <span>Travail en binôme et équipe</span>
+              <span>Tenue rigoureuse de cahier de labo</span>
+              <span>Résolution méthodique de pannes</span>
+              <span>Respect des délais et jalons</span>
+              <span>Anglais technique</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT & CV -->
+    <section id="cv-contact" class="section">
+      <div class="container">
+        <div class="contact-card glow-card">
+          <div class="contact-header">
+            <span class="tag-cyber">ÉCHANGE & COLLABORATION</span>
+            <h2>Discutons de votre opportunité de stage / alternance</h2>
+            <p>Je suis activement à la recherche d'une immersion professionnelle au sein d'une équipe technique en électronique ou systèmes embarqués.</p>
+          </div>
+
+          <div class="contact-split">
+            <!-- Colonne coordonnées -->
+            <div class="contact-details">
+              <div class="c-item">
+                <span class="ci-icon">👤</span>
+                <div>
+                  <strong>Thomas ARISTIN</strong>
+                  <p>Étudiant BUT2 GEII • Spécialité ESE</p>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <span class="ci-icon">📍</span>
+                <div>
+                  <strong>Localisation</strong>
+                  <p>Toulouse (31), Haute-Garonne, France</p>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <span class="ci-icon">✉️</span>
+                <div>
+                  <strong>Email de contact</strong>
+                  <p><a href="mailto:thomas.aristin@etu.iut-tlse3.fr">thomas.aristin@etu.iut-tlse3.fr</a></p>
+                </div>
+              </div>
+
+              <div class="c-item">
+                <span class="ci-icon">🔗</span>
+                <div>
+                  <strong>Réseaux Professionnels</strong>
+                  <p><a href="https://www.linkedin.com/in/thomas-aristin-830a5239a/" target="_blank" rel="noopener">linkedin.com/in/thomas-aristin</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Colonne CV Téléchargeable -->
+            <div class="cv-download-box">
+              <div class="cv-doc-icon">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <h3>Curriculum Vitae</h3>
+              <p>Retrouvez le résumé de mon parcours scolaire, mes stages antérieurs et mes centres d'intérêt.</p>
+              
+              <a href="cv_thomas_aristin.pdf" class="btn btn-glow w-100" target="_blank" download="CV_Thomas_ARISTIN.pdf">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Télécharger mon CV (Format PDF)
+              </a>
+              <span class="cv-advice">Complémentaire au site web • Actualisé pour 2026-2027</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-cyber">
+    <div class="container footer-flex">
+      <div class="footer-brand">
+        <span class="logo-badge mini">TA</span>
+        <span>Thomas ARISTIN • Portfolio Professionnel BUT GEII Toulouse</span>
+      </div>
+      <div class="footer-copy">
+        Conforme au référentiel d'évaluation CEC S3 • Octobre 2026
+      </div>
+      <div>
+        <a href="#accueil" class="back-top">Retour en haut ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
