@@ -133,7 +133,7 @@
               <div class="u-info">
                 <span class="u-badge">Projets & Réalisations</span>
                 <h4>Mes Réalisations Techniques</h4>
-                <p>Découvrez mes projets en détail : chaîne automatisée, SmartCar autonome, biomédical ECG et capteurs IoT.</p>
+                <p>Découvrez mes projets en détail : SmartCar autonome, biomédical ECG, microcontrôleur STM32 et chaîne automatisée.</p>
               </div>
             </a>
 
@@ -171,143 +171,13 @@
         </div>
 
         <!-- ========================================================
-             PROJET 1 (FOCUS ÉVALUATION V1) : CHAÎNE DE PRODUCTION & TRANSPORT
-             Structuré selon la trame obligatoire en 6 points avec retours prof intégrés
-             ======================================================== -->
-        <article class="featured-project-container glow-card" id="projet-chaine">
-          <div class="project-banner-header">
-            <div class="badge-group">
-              <span class="badge-neon">SAÉ S2 • Projet Clé Automatisme</span>
-              <span class="badge-status">Automatisme Industriel & IHM</span>
-            </div>
-            <h3 class="proj-title">Automatisation & Supervision d'une Chaîne de Production (Poste de Tri & Transport)</h3>
-            <p class="proj-lead">
-              Étude fonctionnelle en binôme, algorithmique Grafcet, programmation TIA Portal sur automate Siemens et développement personnel d'une interface IHM tactile pour le pilotage et le diagnostic en direct.
-            </p>
-          </div>
-
-          <!-- Grille des 6 points imposés par le cours de communication (avec touche personnelle & humaine) -->
-          <div class="six-steps-grid">
-            
-            <!-- 1. Contexte -->
-            <div class="step-box">
-              <div class="step-num">01. Contexte & Travail en Binôme</div>
-              <h4>Ligne automatisée interconnectée</h4>
-              <p>
-                Dans le cadre de notre SAÉ de Semestre 2 au BUT GEII de Toulouse, <strong>nous avons travaillé en binôme</strong> sur une station industrielle de transport et de tri de pièces entre les postes A et C, intégrée au sein d'une ligne d'usine complète à 5 stations. Dès le début, <strong>nous nous sommes réparti les tâches</strong> : mon binôme a commencé par l'observation et le repérage mécanique des vérins et capteurs sur la maquette, tandis que j'ai pris la responsabilité de la conception logique du Grafcet et de la supervision complète sur automate Siemens.
-              </p>
-            </div>
-
-            <!-- 2. Objectif -->
-            <div class="step-box">
-              <div class="step-num">02. Notre Objectif</div>
-              <h4>Fluidité de transit & Sécurité mécanique</h4>
-              <p>
-                <strong>Notre défi commun :</strong> automatiser le cycle de transit continu des pièces d'un point A à un point B sans aucun blocage matériel. Il fallait cadencer les mouvements des vérins pneumatiques, synchroniser notre poste avec les stations amont/aval et donner à l'opérateur un moyen clair de commander la machine et d'intervenir en temps réel.
-              </p>
-            </div>
-
-            <!-- 3. Démarche & Réalisation personnelle (VALORISATION INDIVIDUELLE) -->
-            <div class="step-box highlight-personal">
-              <div class="step-num star">03. Ma Contribution Personnelle</div>
-              <h4>Ce que j'ai réalisé de A à Z</h4>
-              <p class="mb-2">Pour mener notre binôme au succès, je me suis investi à 100 % sur la logique et le logiciel :</p>
-              <ul class="clean-list">
-                <li><strong>Mon Grafcet sur draw.io :</strong> J'ai formalisé et dessiné tout l'algorithme sous <em>draw.io</em> en appliquant rigoureusement les règles du formalisme Grafcet (transitions, réceptivités et synchronisations). Poser cette logique avant de toucher à la machine m'a passionné.</li>
-                <li><strong>Programmation autonome sous TIA Portal :</strong> J'ai transposé le Grafcet en Ladder sur l'automate Siemens (méthode par mot). Pour gagner un temps précieux en atelier, <em>j'ai programmé la mise en œuvre complète chez moi</em> afin d'arriver en séance de TP avec un code prêt à tester.</li>
-                <li><strong>Conception de l'IHM tactile (Mon vrai coup de cœur) :</strong> C'est la partie que j'ai le plus adorée ! J'ai créé sous WinCC une interface sur-mesure avec mes propres boutons personnalisés, des voyants d'état dynamiques et des alarmes de diagnostic pour voir d'un coup d'œil l'avancée de chaque pièce.</li>
-              </ul>
-            </div>
-
-            <!-- 4. Outils et technologies -->
-            <div class="step-box">
-              <div class="step-num">04. Outils & Technologies Utilisés</div>
-              <h4>Environnement technique maîtrisé</h4>
-              <div class="tech-tags">
-                <span class="t-tag">Siemens TIA Portal V18</span>
-                <span class="t-tag">Langage Grafcet & Ladder</span>
-                <span class="t-tag">Draw.io (Modélisation)</span>
-                <span class="t-tag">Supervision IHM WinCC</span>
-                <span class="t-tag">Vérins & Capteurs Industriels</span>
-              </div>
-              <div class="personal-note-box">
-                « Ce qui m'a le plus marqué, c'est la facilité de la mise en œuvre par mot sur TIA Portal et le plaisir de voir les vérins exécuter fidèlement mon algorithme. »
-              </div>
-            </div>
-
-            <!-- 5. Résultats & Preuves (Explication concrète du 18/20) -->
-            <div class="step-box">
-              <div class="step-num">05. Résultats & Fierté Personnelle</div>
-              <h4>Une note de 18/20 qui récompense notre travail</h4>
-              <p>
-                Lors de l'évaluation finale en atelier, <strong>notre station a fonctionné parfaitement en continu</strong>, sans aucun à-coup ni fausse manœuvre. Notre rigueur dans les tests unitaires et la qualité ergonomique de mon écran IHM ont été récompensées par la note de <strong>18/20</strong>. Voir la chaîne tourner en rythme avec les autres stations reste l'une de mes plus belles réussites en BUT !
-              </p>
-            </div>
-
-            <!-- 6. Compétences mobilisées -->
-            <div class="step-box">
-              <div class="step-num">06. Ce que ce Projet m'a Appris</div>
-              <h4>Acquis techniques & Savoir-être</h4>
-              <ul class="clean-list">
-                <li><strong>Sur le plan technique :</strong> J'ai appris à traduire un cahier des charges en Grafcet opérationnel, à programmer un automate industriel Siemens et à concevoir une interface homme-machine ergonomique.</li>
-                <li><strong>Sur le plan humain :</strong> J'ai appris à communiquer en continu avec mon binôme, à gérer le stress lors des essais sur machine réelle et à appliquer une démarche méthodique de diagnostic de panne pas-à-pas.</li>
-              </ul>
-            </div>
-
-          </div>
-
-          <!-- PREUVES VISUELLES & VIDÉO : CHAÎNE DE PRODUCTION -->
-          <div class="trace-container">
-            <div class="trace-header">
-              <span class="trace-icon">🎬</span>
-              <div class="trace-titles">
-                <h5>Preuves en Fonctionnement & Diagnostic Technique • Chaîne de Production</h5>
-                <span>Vidéo de fonctionnement réel sur maquette industrielle et diagnostic TIA Portal</span>
-              </div>
-              <span class="trace-pill">Vidéo & Traces Validées</span>
-            </div>
-
-            <!-- Lecteur Vidéo de la chaîne de production en action -->
-            <div class="video-wrapper">
-              <video controls playsinline class="project-video" poster="images/chaine_prod_actionneur_detail.png">
-                <source src="videos/video_chaine_production.mov" type="video/quicktime">
-                <source src="videos/video_chaine_production.mov" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture de cette vidéo.
-              </video>
-              <div class="video-caption">
-                <strong>Démonstration vidéo du système en fonctionnement :</strong>
-                Cycle automatisé complet de transit et de tri de pièces industrielles sur la chaîne de distribution, synchronisé par les capteurs et vérins pneumatiques.
-              </div>
-            </div>
-
-            <!-- Grille des captures de diagnostic technique et IHM -->
-            <div class="trace-gallery-grid">
-              <div class="trace-media-card">
-                <img src="images/chaine_prod_capture_195401.png" alt="IHM TIA Portal de supervision" class="trace-img">
-                <span class="media-caption">
-                  <strong>Interface Homme-Machine (IHM TIA Portal) :</strong>
-                  Conception de l'écran tactile de supervision sous WinCC. Intégration des boutons de pilotage (départ cycle, mode pas-à-pas, réarmement) et retour visuel dynamique de l'avancement de la station.
-                </span>
-              </div>
-              <div class="trace-media-card">
-                <img src="images/chaine_prod_capture_195305.png" alt="Paramétrage des transitions TIA Portal" class="trace-img">
-                <span class="media-caption">
-                  <strong>Mise en œuvre & Paramétrage des transitions :</strong>
-                  Programmation sur TIA Portal des équations logiques de franchissement d'étapes (méthode par mot Grafcet). Sécurisation de l'enchaînement des mouvements et élimination des blocages mécaniques.
-                </span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- ========================================================
-             PROJET 2 : SMARTCAR AUTONOME & TÉLÉCOMMANDÉE (BUT1)
+             PROJET 1 : SMARTCAR AUTONOME & TÉLÉCOMMANDÉE (BUT1)
              Partie Électronique (PCB/KiCad) & Informatique Embarquée (STM32/Bluetooth)
              ======================================================== -->
-        <article class="featured-project-container glow-card mt-5" id="projet-smartcar">
+        <article class="featured-project-container glow-card" id="projet-smartcar">
           <div class="project-banner-header">
             <div class="badge-group">
-              <span class="badge-neon blue">SAÉ S1-S2 • BUT1 GEII</span>
+              <span class="badge-neon blue">SAÉ S1-S2 • Projet Clé ESE</span>
               <span class="badge-status">Électronique Matérielle & Firmware C++</span>
             </div>
             <h3 class="proj-title">SmartCar : Véhicule Autonome & Pilotage Bluetooth par Smartphone</h3>
@@ -393,7 +263,7 @@
         </article>
 
         <!-- ========================================================
-             PROJET 3 : ÉLECTROCARDIOGRAMME BIOMÉDICAL (ECG - S3 ESE)
+             PROJET 2 : ÉLECTROCARDIOGRAMME BIOMÉDICAL (ECG - S3 ESE)
              Conditionnement de signal de haute précision & Filtrage analogique
              ======================================================== -->
         <article class="featured-project-container glow-card mt-5" id="projet-ecg">
@@ -489,7 +359,7 @@
         </article>
 
         <!-- ========================================================
-             PROJET 4 : SYSTÈME EMBARQUÉ (PROJET IE - INFORMATIQUE EMBARQUÉE)
+             PROJET 3 : SYSTÈME EMBARQUÉ (PROJET IE - INFORMATIQUE EMBARQUÉE)
              Architecture bus I2C/SPI, Écran TFT & Capteurs industriels
              ======================================================== -->
         <article class="featured-project-container glow-card mt-5" id="projet-ie">
@@ -549,6 +419,113 @@
                 <span class="media-caption">
                   <strong>Développement Firmware (PlatformIO / C++) :</strong>
                   Structure logicielle sous VS Code avec la machine à états finis (<code>enum EtatJeu { JEU_SECOUSSE, JEU_BLEU, VICTOIRE, BOOM };</code>), gestion de l'affichage graphique via Adafruit_GFX et cadencement temporel réactif.
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================================
+             PROJET 4 : AUTOMATISATION & SUPERVISION (CHAÎNE DE PRODUCTION)
+             SAÉ S2 • Poste de Tri & Transport (Version concise et équilibrée)
+             ======================================================== -->
+        <article class="featured-project-container glow-card mt-5" id="projet-chaine">
+          <div class="project-banner-header">
+            <div class="badge-group">
+              <span class="badge-neon">SAÉ S2 • Automatisme</span>
+              <span class="badge-status">Automate Siemens & Supervision IHM</span>
+            </div>
+            <h3 class="proj-title">Automatisation & Supervision d'une Chaîne de Production (Poste de Tri & Transport)</h3>
+            <p class="proj-lead">
+              Conception en binôme du cycle automatisé de transport et de tri de pièces industrielles, programmation de l'automate Siemens sous TIA Portal et développement d'une IHM tactile WinCC dédiée au pilotage et au diagnostic.
+            </p>
+          </div>
+
+          <!-- Grille concise en 4 cases (2x2 équilibré, sans pavé de texte) -->
+          <div class="six-steps-grid">
+            
+            <!-- 1. Contexte & Défi commun -->
+            <div class="step-box">
+              <div class="step-num">01. Contexte & Défi en Binôme</div>
+              <h4>Ligne automatisée à 5 stations</h4>
+              <p>
+                En binôme au Semestre 2, notre mission était d'automatiser le transfert continu de pièces entre les postes A et C sans blocage mécanique. Nous nous sommes réparti le travail : mon binôme gérait le repérage mécanique des vérins/capteurs, et j'ai pris la responsabilité de la conception logique du Grafcet et de la supervision.
+              </p>
+            </div>
+
+            <!-- 2. Ma contribution personnelle (Concis & direct) -->
+            <div class="step-box highlight-personal">
+              <div class="step-num star">02. Ma Contribution Personnelle</div>
+              <h4>Grafcet, TIA Portal & IHM sur-mesure</h4>
+              <ul class="clean-list">
+                <li><strong>Mon Grafcet (draw.io) :</strong> Modélisation intégrale de l'algorithme et des transitions logiques.</li>
+                <li><strong>Programmation TIA Portal :</strong> Transposition du Grafcet en Ladder sur automate Siemens, préparée et codée chez moi en amont des séances de TP.</li>
+                <li><strong>Mon IHM WinCC (Coup de cœur) :</strong> Création d'une interface tactile ergonomique avec boutons de pilotage (départ cycle, pas-à-pas) et voyants dynamiques d'états.</li>
+              </ul>
+            </div>
+
+            <!-- 3. Outils et technologies -->
+            <div class="step-box">
+              <div class="step-num">03. Outils & Technologies</div>
+              <h4>Environnement logiciel & matériel</h4>
+              <div class="tech-tags">
+                <span class="t-tag">Siemens TIA Portal V18</span>
+                <span class="t-tag">Langage Grafcet / Ladder</span>
+                <span class="t-tag">Supervision IHM WinCC</span>
+                <span class="t-tag">Draw.io (Modélisation)</span>
+                <span class="t-tag">Vérins pneumatiques & Capteurs</span>
+              </div>
+            </div>
+
+            <!-- 4. Résultats & Compétences (18/20) -->
+            <div class="step-box">
+              <div class="step-num">04. Résultats & Compétences</div>
+              <h4>Cycle 100 % fluide & Note de 18/20</h4>
+              <p>
+                Validation réussie sur site dès le premier essai : synchronisation fluide des vérins et diagnostic immédiat grâce à l'IHM. Un projet qui m'a appris la rigueur du diagnostic de panne pas-à-pas, l'autonomie et une excellente note de <strong>18/20</strong> à la clé.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- PREUVES VISUELLES & VIDÉO : CHAÎNE DE PRODUCTION -->
+          <div class="trace-container">
+            <div class="trace-header">
+              <span class="trace-icon">🎬</span>
+              <div class="trace-titles">
+                <h5>Preuves en Fonctionnement & Diagnostic Technique • Chaîne de Production</h5>
+                <span>Vidéo de fonctionnement réel sur maquette industrielle et diagnostic TIA Portal</span>
+              </div>
+              <span class="trace-pill">Vidéo & Traces Validées</span>
+            </div>
+
+            <!-- Lecteur Vidéo de la chaîne de production en action -->
+            <div class="video-wrapper">
+              <video controls playsinline class="project-video" poster="images/chaine_prod_actionneur_detail.png">
+                <source src="videos/video_chaine_production.mov" type="video/quicktime">
+                <source src="videos/video_chaine_production.mov" type="video/mp4">
+                Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+              </video>
+              <div class="video-caption">
+                <strong>Démonstration vidéo du système en fonctionnement :</strong>
+                Cycle automatisé complet de transit et de tri de pièces industrielles sur la chaîne de distribution, synchronisé par les capteurs et vérins pneumatiques.
+              </div>
+            </div>
+
+            <!-- Grille des captures de diagnostic technique et IHM -->
+            <div class="trace-gallery-grid">
+              <div class="trace-media-card">
+                <img src="images/chaine_prod_capture_195401.png" alt="IHM TIA Portal de supervision" class="trace-img">
+                <span class="media-caption">
+                  <strong>Interface Homme-Machine (IHM TIA Portal) :</strong>
+                  Conception de l'écran tactile de supervision sous WinCC. Intégration des boutons de pilotage (départ cycle, mode pas-à-pas, réarmement) et retour visuel dynamique de l'avancement de la station.
+                </span>
+              </div>
+              <div class="trace-media-card">
+                <img src="images/chaine_prod_capture_195305.png" alt="Paramétrage des transitions TIA Portal" class="trace-img">
+                <span class="media-caption">
+                  <strong>Mise en œuvre & Paramétrage des transitions :</strong>
+                  Programmation sur TIA Portal des équations logiques de franchissement d'étapes (méthode par mot Grafcet). Sécurisation de l'enchaînement des mouvements et élimination des blocages mécaniques.
                 </span>
               </div>
             </div>
